@@ -1,0 +1,17 @@
+{
+    "role_name": "my-role",
+    "mit_license_email": "andrew.rothstein@gmail.com",
+    "mit_license_holder": "Andrew Rothstein",
+    "github_root": "https://github.com",
+    "github_org": "andrewrothstein",
+    "gh_action": {
+        "name": "bake-ansible-images-v1",
+        "path": "andrewrothstein/.github/.github/workflows",
+        "ref": "develop"
+    },
+    "galaxy_name": "{{ cookiecutter.role_name.lower().replace('-', '_') }}",
+    "galaxy_org": "{{ cookiecutter.github_org }}",
+    "github_project": "{{ cookiecutter.galaxy_name }}",
+    "role_desc": "@TODO document {{ cookiecutter.galaxy_name }} does here",
+    "project_slug": "ansible-{{ cookiecutter.galaxy_name }}"
+}

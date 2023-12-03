@@ -1,0 +1,5 @@
+---
+jobs:
+  '{{ cookiecutter.gh_action.name }}':
+    uses: '{{ cookiecutter.gh_action.path }}/{{ cookiecutter.gh_action.name }}.yml@{{ cookiecutter.gh_action.ref }}'
+'on': push
