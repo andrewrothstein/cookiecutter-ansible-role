@@ -2,7 +2,7 @@ andrewrothstein.{{ cookiecutter.galaxy_name }}
 ===========================
 ![Build Status]({{ cookiecutter.github_root }}/{{ cookiecutter.github_org }}/{{ cookiecutter.github_project }}/actions/workflows/build.yml/badge.svg)
 
-{{ cookiecutter.role_desc }}
+{{ cookiecutter.role_desc_md }}
 
 Requirements
 ------------

@@ -10,8 +10,13 @@
         "ref": "develop"
     },
     "galaxy_name": "{{ cookiecutter.role_name.lower().replace('-', '_') }}",
+    "galaxy_author": "{{ cookiecutter.mit_license_holder }}",
+    "galaxy_company": "BlackRock",
+    "galaxy_min_ansible_version": "1.2",
     "galaxy_org": "{{ cookiecutter.github_org }}",
+    "galaxy_fq_name": "{{ cookiecutter.galaxy_org }}.{{ cookiecutter.galaxy_name }}",
     "github_project": "{{ cookiecutter.galaxy_name }}",
-    "role_desc": "@TODO document {{ cookiecutter.galaxy_name }} does here",
+    "galaxy_role_desc": "@TODO document {{ cookiecutter.galaxy_name }} goes here",
+    "role_desc_md": "{{ cookiecutter.galaxy_role_desc }}",
     "project_slug": "ansible-{{ cookiecutter.galaxy_name }}"
 }

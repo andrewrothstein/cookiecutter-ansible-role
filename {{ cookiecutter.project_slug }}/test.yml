@@ -1,0 +1,8 @@
+---
+- hosts: all
+  roles:
+    - role: '{% raw %}{{ playbook_dir }}{% endraw %}'
+  tasks:
+    - name: testing {{ cookiecutter.galaxy_fq_name }}
+      debug:
+        msg: @TODO implement me
