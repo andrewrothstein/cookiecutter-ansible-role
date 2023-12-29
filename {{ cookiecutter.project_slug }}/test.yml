@@ -1,8 +1,12 @@
 ---
 - hosts: all
-  roles:
-    - role: '{% raw %}{{ playbook_dir }}{% endraw %}'
   tasks:
-    - name: testing {{ cookiecutter.galaxy_fq_name }}
-      debug:
-        msg: @TODO implement me
+    - name: Testing role installation: {{ cookiecutter.galaxy_fq_name }}
+      ansible.builtin.include_role:
+        name: '{% raw %}{{ playbook_dir }}{% endraw %}'
+    - name: Executing '{{ cookiecutter.role_name }} --version'
+      ansible.builtin.command: {{ cookiecutter.role_name }} --version
+      register: '{{ cookie_cutter.role_name }}_test_output'
+    - name: Output from '{{ cookiecutter.role_name }} --version'
+      ansible.builtin.debug:
+        msg: {% raw %}'{{ {% endraw %}{{ cookie_cutter.role_name }}_test_output.stdout{% raw %} }}'{% endraw %}
