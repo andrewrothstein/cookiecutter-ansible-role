@@ -3,30 +3,30 @@ galaxy_info:
   author: '{{ cookiecutter.galaxy_author }}'
   description: '{{ cookiecutter.galaxy_role_desc }}'
   company: '{{ cookiecutter.galaxy_company }}'
+  galaxy_tags: []
   license: MIT
   min_ansible_version: {{ cookiecutter.galaxy_min_ansible_version }}
   platforms:
     - name: Alpine
       versions:
         - all
-    - name: Archlinux
+    - name: ArchLinux
       versions:
-        - latest
+        - all
     - name: Debian
       versions:
         - bookworm
         - bullseye
     - name: EL
       versions:
-        - 8
-        - 9
+        - '8'
+        - '9'
     - name: Fedora
       versions:
-        - 38
-        - 39
+        - '38'
+        - '39'
     - name: Ubuntu
       versions:
         - focal
         - jammy
-  galaxy_tags: []
   role_name: '{{ cookiecutter.galaxy_name }}'
