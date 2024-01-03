@@ -6,7 +6,7 @@
         name: '{% raw %}{{ playbook_dir }}{% endraw %}'
     - name: Executing '{{ cookiecutter.role_name }} --version'
       ansible.builtin.command: {{ cookiecutter.role_name }} --version
-      register: '{{ cookie_cutter.role_name }}_test_output'
+      register: '{{ cookiecutter.role_name }}_test_output'
     - name: Output from '{{ cookiecutter.role_name }} --version'
       ansible.builtin.debug:
-        msg: {% raw %}'{{ {% endraw %}{{ cookie_cutter.role_name }}_test_output.stdout{% raw %} }}'{% endraw %}
+        msg: {% raw %}'{{ {% endraw %}{{ cookiecutter.role_name }}_test_output.stdout{% raw %} }}'{% endraw %}
