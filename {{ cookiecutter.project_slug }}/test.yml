@@ -1,7 +1,7 @@
 ---
 - hosts: all
   tasks:
-    - name: Testing role installation: {{ cookiecutter.galaxy_fq_name }}
+    - name: Testing {{ cookiecutter.galaxy_fq_name }} role
       ansible.builtin.include_role:
         name: '{% raw %}{{ playbook_dir }}{% endraw %}'
     - name: Executing '{{ cookiecutter.role_name }} --version'
