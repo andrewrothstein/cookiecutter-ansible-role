@@ -6,6 +6,7 @@ galaxy_info:
   galaxy_tags: []
   license: MIT
   min_ansible_version: {{ cookiecutter.galaxy_min_ansible_version }}
+  namespace: '{{ cookiecutter.galaxy_org }}'
   platforms:
     - name: Alpine
       versions:
