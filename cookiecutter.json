@@ -4,11 +4,6 @@
     "mit_license_holder": "Andrew Rothstein",
     "github_root": "https://github.com",
     "github_org": "andrewrothstein",
-    "gh_action": {
-        "name": "bake-ansible-images-v1",
-        "path": "andrewrothstein/.github/.github/workflows",
-        "ref": "develop"
-    },
     "galaxy_name": "{{ cookiecutter.role_name.lower().replace('-', '_') }}",
     "galaxy_author": "{{ cookiecutter.mit_license_holder }}",
     "galaxy_company": "BlackRock",
